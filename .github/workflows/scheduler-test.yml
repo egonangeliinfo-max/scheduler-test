@@ -2,8 +2,8 @@ name: Isolated scheduler test
 
 on:
   schedule:
-    # Repository pubblico. 11:07 UTC = 13:07 Europe/Rome il 01/10/2026.
-    - cron: "7 11 * * *"
+    # Test dopo disable/enable: 11:32 UTC = 13:32 Europe/Rome il 01/10/2026.
+    - cron: "32 11 * * *"
   workflow_dispatch:
 
 jobs:
@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Scheduler OK
         run: |
-          echo "isolated scheduler OK"
+          echo "isolated scheduler OK after reset"
           date -u
