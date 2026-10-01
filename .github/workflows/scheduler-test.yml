@@ -2,8 +2,8 @@ name: Isolated scheduler test
 
 on:
   schedule:
-    # Test diagnostico vicino nel tempo: 10:57 UTC = 12:57 Europe/Rome oggi.
-    - cron: "57 10 * * *"
+    # Repository pubblico. 11:07 UTC = 13:07 Europe/Rome il 01/10/2026.
+    - cron: "7 11 * * *"
   workflow_dispatch:
 
 jobs:
