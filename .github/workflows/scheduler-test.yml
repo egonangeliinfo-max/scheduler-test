@@ -2,8 +2,8 @@ name: Isolated scheduler test
 
 on:
   schedule:
-    # Test diagnostico: minuti non standard per evitare i picchi dello scheduler.
-    - cron: "17,37,57 * * * *"
+    # Test diagnostico vicino nel tempo: 10:57 UTC = 12:57 Europe/Rome oggi.
+    - cron: "57 10 * * *"
   workflow_dispatch:
 
 jobs:
